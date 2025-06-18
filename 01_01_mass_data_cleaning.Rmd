@@ -1,0 +1,26 @@
+---
+title: "Untitled"
+output: html_document
+date: "2025-06-18"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+library(tidyverse)
+```
+
+```{r}
+dry_weight <- read.csv(here("data", "raw_data", "clipping_dry_weights.csv")) %>% 
+  group_by(block, treatment, clip) %>% 
+  reframe(dry_mass_g = sum(dry_weight_g),
+          date = date) %>% 
+  distinct()
+
+wet_weight <- read.csv(here("data", "raw_data", "clipping_wet_weights.csv")) %>% 
+  select(block, treatment, clip, wet_weight_g, species, secondary_species, date)
+
+mass <- inner_join(wet_weight, dry_weight, by = c("block", "treatment", "clip", "date")) %>% 
+  mutate(lfm = (wet_weight_g - dry_mass_g)/(dry_mass_g)*100)
+```
+
