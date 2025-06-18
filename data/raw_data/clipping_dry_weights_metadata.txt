@@ -1,0 +1,34 @@
+Title: "clipping_dry_weights.csv"
+
+Creator: Shane Dewees
+
+Creation Date: 06/18/2025
+
+Last Update: 06/18/2025 by Shane Dewees
+
+Data Collectors: 
+	- 06/12/2025: Shane Dewees and Loralee Larios
+
+Location: Weir Canyon Grazing Project Boundary. Anaheim, California
+
+Data Description: Dry weights for biomass clippings taken for the Weir Canyon Grazing Project. Dry weight was obtained by collecting all vegetative biomass in 0.25m by 0.25m quadrats. This included clipping all standing vegetation and collecting all litter in a quadrat. Standing vegetation was clipped if it was rooted within the quadrat. Collected biomass was then stored in paper lunch bags, transported back to University of California Santa Barbara, and within 24 hours placed in a drying oven. Biomass was then dried for 3 days (72 hours) at 60 Celsius. After three days of drying, biomass was removed from the oven and immediately weighed, in grams, to two decimal places. To subtract the paper bag weight, 10 bags from the purchased 100-pack were measured, and their average was subtracted from all dry mass measurements.
+	- 06/12/2025: Pre-grazing biomass measurements. 3 quadrats were clipped per block x treatment iteration. The quadrats were located near established transects and to be representative of the vegetation across the whole block x 	treatment unit. Dry mass was measured using a XXX scale. 
+
+Column Descriptions: 
+	- block: The block that the clipping took place in. Each block consists of three units, one unit for each of the three treatments. This value is numerical and can have a value of 1, 2, or 3. 
+	
+	- treatment: The treatment type the clipping took place in. There are three possible treatments: low grazing, precision grazing, and control (e.g. no grazing). This value is a character string and can have a value of "low", 	"precision", or "control".
+	
+	- clip: The clip number for the block x treatment unit that row represents. Three clips per block x treatment unit were taken. This value is numeric and can have a value of 1, 2 or 3. 
+	
+	- bag: Some clips had more biomass than could fit in a single paper bag. In cases where this occurred, bag numbers were recorded and dry weight was weighed separately. This value is numeric and can have a value of 1 or 2. 
+	
+	- raw_dry_weight_g: This is the measured dry mass of both the biomass and paper bag together. The units of this value are grams and go to two decimal places. This value is numeric. 
+	
+	- bag_weight_g: This is the average measured paper bag weight. The units of this value are grams and go to two decimal places. This value is numeric. 
+	
+	- dry_weight_g: This is the dry mass of biomass only, calculated as raw_dry_weight_g - bag_weight_g. In some instances, because of paper bags ripping, the samples were double bagged. This is recorded in the notes column, and in 	these cases, the average bag weight was subtracted twice. The units of this value are grams and go to two decimal places. This value is numeric. 
+
+	- date: This is the date that samples were collected in the field, NOT the date dry mass was measured. The format of this value is mm/dd/yyyy. 
+	
+	- notes: These are any notes pertinent to the sample that were recorded at any point of data collection/recording. This value is a character string. 

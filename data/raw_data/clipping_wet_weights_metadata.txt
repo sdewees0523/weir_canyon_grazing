@@ -1,0 +1,36 @@
+Title: "clipping_wet_weights.csv"
+
+Creator: Shane Dewees
+
+Creation Date: 06/18/2025
+
+Last Update: 06/18/2025 by Shane Dewees
+
+Data Collectors: 
+	- 06/12/2025: Shane Dewees and Loralee Larios
+
+Location: Weir Canyon Grazing Project Boundary. Anaheim, California
+
+Data Description: Wet weights and general species composition for biomass clippings taken for the Weir Canyon Grazing Project. Wet weight was obtained by collecting all vegetative biomass in 0.25m by 0.25m quadrats. This included clipping all standing vegetation and collecting all litter in a quadrat. Standing vegetation was clipped if it was rooted within the quadrat. Collected biomass was then stored in paper lunch bags, and immediately weighed in the field using a 100-g or 300-g Pesola scale. For the 100-g Pesola scale measurements were rounded to the nearest whole number. For the 300-g Pesola scale, measurements were rounded to the nearest even whole number. In some instances, the biomass had to be split between multiple paper bags. When this occurred, bags were attached to the Pesola scale together and the total weight was recorded. Additionally, the number of bags measured was recorded in the notes column. To subtract the paper bag weight, 10 bags from the purchased 100-pack were measured, and their average was calculated. Then this average multiplied by the number of bags used, was subtracted from all wet weight measurements.
+	- 06/12/2025: Pre-grazing biomass measurements. 3 quadrats were clipped per block x treatment iteration. The quadrats were located near established transects and to be representative of the vegetation across the whole block x 	treatment unit. 
+
+Column Descriptions: 
+	- block: The block that the clipping took place in. Each block consists of three units, one unit for each of the three treatments. This value is numerical and can have a value of 1, 2, or 3. 
+	
+	- treatment: The treatment type the clipping took place in. There are three possible treatments: low grazing, precision grazing, and control (e.g. no grazing). This value is a character string and can have a value of "low", 	"precision", or "control".
+	
+	- clip: The clip number for the block x treatment unit that row represents. Three clips per block x treatment unit were taken. This value is numeric and can have a value of 1, 2 or 3.  
+	
+	- raw_wet_weight_g: This is the measured wet weight of both the biomass and paper bag together. The units of this value are grams. This value is numeric. 
+	
+	- bag_weight_g: This is the average measured paper bag weight. The units of this value are grams and go to two decimal places. This value is numeric. 
+	
+	- wet_weight_g: This is the wet weight of biomass only, calculated as raw_wet_weight_g - bag_weight_g * number of bags used. The units of this value are grams. This value is numeric. 
+
+	- date: This is the date that samples were collected in the field, NOT the date dry mass was measured. The format of this value is mm/dd/yyyy. 
+
+	- species: This is the species visually assessed to be most dominant in the quadrat biomass was collected from. This value is a character string. Each species is represented by 6 letters where the first three letters are the first 	three letters of the species' genus and the fourth through sixth letters are the first three letters of the species name. If multiple species are recorded, they are separated by a comma. 
+
+	- secondary_species: These are any other species observed to be in the quadrat biomass was collected from. This value is a character string. Each species is represented by 6 letters where the first three letters are the first 	three letters of the species' genus and the fourth through sixth letters are the first three letters of the species name. If multiple species are recorded, they are separated by a comma.
+	
+	- notes: These are any notes pertinent to the sample that were recorded at any point of data collection/recording. This value is a character string. 

@@ -1,0 +1,27 @@
+Title: "clipping_heights.csv"
+
+Creator: Shane Dewees
+
+Creation Date: 06/18/2025
+
+Last Update: 06/18/2025
+
+Data Collectors:
+	- 06/12/2025: Shane Dewees and Loralee Larios
+
+Location: Weir Canyon Grazing Project Boundary. Anaheim California
+
+Data Description: Fuel height for the same 0.25 by 0.25 quadrats used to measure biomass. These heights were measured just prior to biomass collection. For each quadrat, four height measurements were taken, by partitioning each quadrat into four parts and measuring the tallest point of fuel for each part. The height was measured as the fuel presented, not straightened to maximum height. Measurements were taken with either a meter stick or tape measure. 
+
+Column Description: 
+	- block: The block that the clipping took place in. Each block consists of three units, one unit for each of the three treatments. This value is numerical and can have a value of 1, 2, or 3. 
+	
+	- treatment: The treatment type the clipping took place in. There are three possible treatments: low grazing, precision grazing, and control (e.g. no grazing). This value is a character string and can have a value of "low", 	"precision", or "control".
+	
+	- clip: The clip number for the block x treatment unit that row represents. Three clips per block x treatment unit were taken. This value is numeric and can have a value of 1, 2 or 3. 
+	
+	- height_cm: This is the measured height for a given partition of a quadrat. The units of this value are cm and go to the nearest whole number. This value is numeric. 
+
+	- date: This is the date that samples were collected in the field, NOT the date dry mass was measured. The format of this value is mm/dd/yyyy. 
+	
+	- notes: These are any notes pertinent to the sample that were recorded at any point of data collection/recording. This value is a character string. 

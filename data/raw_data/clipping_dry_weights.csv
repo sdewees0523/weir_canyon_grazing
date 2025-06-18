@@ -1,4 +1,4 @@
-block,treatment,clip,bag,raw_dry_weight_g,bag_weight_g,dry_weight_g,date,
+block,treatment,clip,bag,raw_dry_weight_g,bag_weight_g,dry_weight_g,date,notes 
 2,low,3,1,72.95,7.48,65.47,6/12/2025,
 2,control,2,2,39.58,7.48,32.1,6/12/2025,
 2,low,2,1,39.08,7.48,31.6,6/12/2025,
