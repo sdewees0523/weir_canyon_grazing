@@ -1,0 +1,52 @@
+---
+title: "Untitled"
+output: html_document
+date: "2025-06-18"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+library(tidyverse)
+```
+
+```{r}
+mass <- read.csv(here("data", "clean_data", "mass_clean.csv"))
+heights <- read.csv(here("data", "raw_data", "clipping_heights.csv"))
+```
+
+```{r}
+ggplot(data = mass)+
+  geom_boxplot(aes(x = treatment, y = dry_mass_g))
+
+ggplot(data = mass)+
+  geom_boxplot(aes(x = treatment, y = wet_weight_g))
+
+ggplot(data = mass)+
+  geom_boxplot(aes(x = treatment, y = lfm))
+```
+
+
+```{r}
+ggplot(data = mass)+
+  geom_boxplot(aes(x = treatment, y = dry_mass_g))+ 
+  facet_wrap(~block)
+
+ggplot(data = mass)+
+  geom_boxplot(aes(x = treatment, y = wet_weight_g))+ 
+  facet_wrap(~block)
+
+ggplot(data = mass)+
+  geom_boxplot(aes(x = treatment, y = lfm))+ 
+  facet_wrap(~block)
+```
+
+```{r}
+ggplot(data = heights, aes(x = treatment, y = height_cm))+
+  geom_boxplot()
+
+ggplot(data = heights, aes(x = treatment, y = height_cm))+
+  geom_boxplot()+
+  facet_wrap(~block)
+```
+

@@ -22,5 +22,7 @@ wet_weight <- read.csv(here("data", "raw_data", "clipping_wet_weights.csv")) %>%
 
 mass <- inner_join(wet_weight, dry_weight, by = c("block", "treatment", "clip", "date")) %>% 
   mutate(lfm = (wet_weight_g - dry_mass_g)/(dry_mass_g)*100)
+
+write.csv(mass, here("data", "clean_data", "mass_clean.csv"), row.names = F, append = F)
 ```
 
