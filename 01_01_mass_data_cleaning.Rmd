@@ -18,6 +18,13 @@ dry_weight <- read.csv(here("data", "raw_data", "clipping_dry_weights.csv")) %>%
   distinct()
 
 wet_weight <- read.csv(here("data", "raw_data", "clipping_wet_weights.csv")) %>% 
+  group_by(block, treatment, clip) %>% 
+  reframe(wet_weight_g = sum(wet_weight_g),
+          date = date, 
+          species = species, 
+          secondary_species = secondary_species) %>% 
+  distinct() %>% 
+  filter(species != "")
   select(block, treatment, clip, wet_weight_g, species, secondary_species, date)
 
 mass <- inner_join(wet_weight, dry_weight, by = c("block", "treatment", "clip", "date")) %>% 
