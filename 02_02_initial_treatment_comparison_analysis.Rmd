@@ -1,0 +1,32 @@
+---
+title: "Untitled"
+output: html_document
+date: "2025-06-30"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+library(emmeans)
+```
+
+```{r}
+mass <- read.csv(here("data", "clean_data", "mass_clean.csv"))
+heights <- read.csv(here("data", "raw_data", "clipping_heights.csv"))
+```
+
+```{r}
+dry_mass_model <- lmer(dry_mass_g ~ treatment + (1|block), data = mass)
+dry_mass_emmeans <- emmeans(dry_mass_model, specs = "treatment")
+pairs(dry_mass_emmeans)
+```
+
+```{r}
+height_model <- lmer(height_cm ~ treatment + (1|block) + (1|clip), data = heights)
+height_emmeans <- emmeans(height_model, specs = "treatment")
+pairs(height_emmeans)
+```
+
