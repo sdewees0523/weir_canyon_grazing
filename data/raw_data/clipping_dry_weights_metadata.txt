@@ -4,15 +4,17 @@ Creator: Shane Dewees
 
 Creation Date: 06/18/2025
 
-Last Update: 06/18/2025 by Shane Dewees
+Last Update: 06/30/2025 by Shane Dewees
 
 Data Collectors: 
 	- 06/12/2025: Shane Dewees and Loralee Larios
+	- 06/24/2025: Shane Dewees and Travis Brooks
 
 Location: Weir Canyon Grazing Project Boundary. Anaheim, California
 
 Data Description: Dry weights for biomass clippings taken for the Weir Canyon Grazing Project. Dry weight was obtained by collecting all vegetative biomass in 0.25m by 0.25m quadrats. This included clipping all standing vegetation and collecting all litter in a quadrat. Standing vegetation was clipped if it was rooted within the quadrat. Collected biomass was then stored in paper lunch bags, transported back to University of California Santa Barbara, and within 24 hours placed in a drying oven. Biomass was then dried for 3 days (72 hours) at 60 Celsius. After three days of drying, biomass was removed from the oven and immediately weighed, in grams, to two decimal places. To subtract the paper bag weight, 10 bags from the purchased 100-pack were measured, and their average was subtracted from all dry mass measurements.
-	- 06/12/2025: Pre-grazing biomass measurements. 3 quadrats were clipped per block x treatment iteration. The quadrats were located near established transects and to be representative of the vegetation across the whole block x 	treatment unit. Dry mass was measured using a XXX scale. 
+	- 06/12/2025: Pre-grazing biomass measurements. 3 quadrats were clipped per block x treatment iteration. The quadrats were located near established transects and to be 	representative of the vegetation across the whole block x treatment unit. Dry mass was measured using a Bonvoisin precision balance MK series scale. Model: MK50002E. 
+	- 06/24/2025: Finished collecting pre-grazing biomass measurements in Block 3 and Block 1. Field conditions were considerably drier that previous sampling date, especially for 	the mustard dominated plots. Wet weights and fuel moisture might not be comparable, but heights and dry mass should be. 
 
 Column Descriptions: 
 	- block: The block that the clipping took place in. Each block consists of three units, one unit for each of the three treatments. This value is numerical and can have a value of 1, 2, or 3. 
